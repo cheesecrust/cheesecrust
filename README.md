@@ -27,21 +27,21 @@
     <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"/>&nbsp 
     <img src="https://img.shields.io/badge/Redux_Saga-999999?style=flat-square&logo=Redux-Saga&logoColor=white"/>&nbsp 
     <img src="https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white"/>&nbsp 
-    <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat-square&logo=recoil&logoColor=white"/>&nbsp  -->
+    <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat-square&logo=recoil&logoColor=white"/>&nbsp  
   </div>
 
   <h2></h2>  
 
   <div>
      <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=iOS&logoColor=white"/>&nbsp 
-    <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/>&nbsp  -->
+    <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/>&nbsp  
   </div>
 
   <h2></h2>
 
   <div>
     <img src="https://img.shields.io/badge/Android-34A853?style=flat-square&logo=Android&logoColor=white"/>&nbsp 
-    <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/>&nbsp  -->
+    <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/>&nbsp  
   </div>
 
   <h2></h2>
@@ -49,7 +49,7 @@
   <div>
     <img src="https://img.shields.io/badge/node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>&nbsp 
     <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=white"/>&nbsp 
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp  -->
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp  
   </div>
 
   <h2></h2>

@@ -3,7 +3,7 @@ Hi!
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 /*
@@ -12,6 +12,30 @@ import java.util.StringTokenizer;
  * 전체 순열을 0의 개수가 많음에 따라 정렬한 후 발견한 순간 그만한다.
  */
 public class SWEA_2112_보호필름_정연수 {
+	static class Select implements Comparable<Select> {
+		int[] selected;
+		int num;
+		
+		public Select(int[] arr) {
+			num = 0;
+			selected = new int[arr.length];
+			for (int idx = 0; idx < arr.length; idx++) {
+				selected[idx] = arr[idx];
+				if (arr[idx] == 0) num++;
+			}
+		}
+
+		@Override
+		public int compareTo(Select o) {
+			// TODO Auto-generated method stub
+			int tmp = 0;
+			for (int idx = 0; idx < o.selected.length; idx++) {
+				if (o.selected[idx] == 0) tmp++;
+			}
+			return tmp - num;
+		}
+	}
+	
 	private static BufferedReader br;
 	private static StringTokenizer st;
 	private static int[] selected;
@@ -19,6 +43,7 @@ public class SWEA_2112_보호필름_정연수 {
 	private static int goal;
 	private static int[][] film;
 	private static int answer;
+	private static PriorityQueue<Select> pq;
 	
 	private static boolean checkGoal(int[][] testFilm) {
 		for (int col = 0; col < weight; col++) {
@@ -58,14 +83,7 @@ public class SWEA_2112_보호필름_정연수 {
 	
 	private static void dfs(int count) {
 		if (count == height) {
-			if (checkGoal(changedFilm())) {
-				int tmp = 0;
-				for (int idx = 0; idx < height; idx++) {
-					if(selected[idx] != 0) tmp++;
-				}
-				answer = Math.min(answer, tmp);
-			}
-			return;
+			pq.add(new Select(selected));
 		}
 		for (int i = 0; i < 3; i++) {
 			selected[count] = i;
@@ -84,7 +102,8 @@ public class SWEA_2112_보호필름_정연수 {
 			goal = Integer.parseInt(st.nextToken());
 			answer = Integer.MAX_VALUE;
 			selected = new int[height];
-			film = new int[height][weight];	
+			film = new int[height][weight];
+			pq = new PriorityQueue<>();
 			for (int row = 0; row < height; row++) {
 				st = new StringTokenizer(br.readLine());
 				for (int col = 0; col < weight; col++) {
